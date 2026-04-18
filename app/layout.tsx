@@ -32,6 +32,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import TemplateWrapper from "./_components/layout/TemplateWrapper";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/next";
 
 // Complete SEO metadata foundation for layout
 export const metadata: Metadata = {
@@ -191,6 +192,7 @@ export default function RootLayout({
           {children}
           <Toaster />
         </TemplateWrapper>
+        <Analytics />
       </body>
     </html>
   );
